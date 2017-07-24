@@ -1,0 +1,123 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="4014140413" file="D:\Research\Data\altimetry_data\Sentinel-toolkit\app\Sentinel3_WaterLevelExtracter.prj" location="D:\Research\Data\altimetry_data\Sentinel-toolkit\app" name="Sentinel3_WaterLevelExtracter" preferred-package-location="D:\Research\Data\altimetry_data\Sentinel-toolkit\app\Sentinel3_WaterLevel_Extracter\runtime" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Sentinel3_WaterLevelExtracter</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>C. H. Chang, M. Okeowo, H. Lee (PhD.)</param.authnamewatermark>
+    <param.email>hlee@uh.edu</param.email>
+    <param.company>University of Houston, TX, U.S.A</param.company>
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\University of Houston, TX, U.S.A\Sentinel3_WaterLevelExtracter\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\Sentinel3_WaterLevel_Extracter\app</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Sentinel3_WaterLevel_Extracter\bin</param.files.only>
+    <param.output>${PROJECT_ROOT}\Sentinel3_WaterLevel_Extracter\runtime</param.output>
+    <param.logdir>${PROJECT_ROOT}\Sentinel3_WaterLevel_Extracter</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>Sentinel3_WaterLevel_Extracter_Installer</param.web.mcr.name>
+    <param.package.mcr.name>matlab_runtime</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\sentinel_3.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\altimetryoutlier.m</file>
+      <file>${PROJECT_ROOT}\decyear2matdate.m</file>
+      <file>${PROJECT_ROOT}\geoidegm2008grid.mat</file>
+      <file>${PROJECT_ROOT}\hgt_comp.m</file>
+      <file>${PROJECT_ROOT}\iqrange.m</file>
+      <file>${PROJECT_ROOT}\mjd2gre.m</file>
+      <file>${PROJECT_ROOT}\s3_reader.m</file>
+      <file>${PROJECT_ROOT}\sentinel_3.m</file>
+      <file>${PROJECT_ROOT}\SingleProcess_TimeSeries.m</file>
+      <file>${PROJECT_ROOT}\uncertainty.m</file>
+      <file>${PROJECT_ROOT}\variable_extract.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\Sentinel3_WaterLevel_Extracter\app" name="Sentinel3_WaterLevelExtracter.exe" optional="false">D:\Research\Data\altimetry_data\Sentinel-toolkit\app\Sentinel3_WaterLevel_Extracter\app\Sentinel3_WaterLevelExtracter.exe</file>
+      <file location="${PROJECT_ROOT}\Sentinel3_WaterLevel_Extracter\app" name="splash.png" optional="false">D:\Research\Data\altimetry_data\Sentinel-toolkit\app\Sentinel3_WaterLevel_Extracter\app\splash.png</file>
+      <file location="${PROJECT_ROOT}\Sentinel3_WaterLevel_Extracter\app" name="readme.txt" optional="true">D:\Research\Data\altimetry_data\Sentinel-toolkit\app\Sentinel3_WaterLevel_Extracter\app\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Program Files\MATLAB\R2016a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
